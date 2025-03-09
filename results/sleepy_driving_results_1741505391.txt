@@ -1,0 +1,43 @@
+EAR: 0.40746909011409405, Frame Count: 0
+EAR: 0.24360701988242245, Frame Count: 1
+EAR: 0.1904850263929832, Frame Count: 2
+EAR: 0.15579521526576745, Frame Count: 3
+EAR: 0.2188673110929133, Frame Count: 4
+Sleepy Driving Alert Detected at 2025-03-08 23:29:53
+EAR: 0.21743011160987724, Frame Count: 5
+Sleepy Driving Alert Detected at 2025-03-08 23:29:53
+EAR: 0.1768279550307877, Frame Count: 6
+Sleepy Driving Alert Detected at 2025-03-08 23:29:54
+EAR: 0.18329203880274136, Frame Count: 7
+Sleepy Driving Alert Detected at 2025-03-08 23:29:54
+EAR: 0.10669135628414486, Frame Count: 8
+Sleepy Driving Alert Detected at 2025-03-08 23:29:54
+EAR: 0.1373756387999388, Frame Count: 9
+Sleepy Driving Alert Detected at 2025-03-08 23:29:54
+EAR: 0.24606719000163618, Frame Count: 10
+Sleepy Driving Alert Detected at 2025-03-08 23:29:55
+EAR: 0.296711638190669, Frame Count: 11
+Sleepy Driving Alert Detected at 2025-03-08 23:29:55
+EAR: 0.26698287111405683, Frame Count: 12
+Sleepy Driving Alert Detected at 2025-03-08 23:29:55
+EAR: 0.24403616994494132, Frame Count: 13
+Sleepy Driving Alert Detected at 2025-03-08 23:29:55
+EAR: 0.2345259215352572, Frame Count: 14
+Sleepy Driving Alert Detected at 2025-03-08 23:29:55
+EAR: 0.23441918973659517, Frame Count: 15
+Sleepy Driving Alert Detected at 2025-03-08 23:29:56
+EAR: 0.3218092203794418, Frame Count: 16
+Sleepy Driving Alert Detected at 2025-03-08 23:29:56
+EAR: 0.08293249500285427, Frame Count: 17
+Sleepy Driving Alert Detected at 2025-03-08 23:29:56
+EAR: 0.3211701277768845, Frame Count: 18
+Sleepy Driving Alert Detected at 2025-03-08 23:29:56
+EAR: 0.33566086948984697, Frame Count: 19
+Sleepy Driving Alert Detected at 2025-03-08 23:29:57
+EAR: 0.3088402287759763, Frame Count: 20
+Sleepy Driving Alert Detected at 2025-03-08 23:29:57
+EAR: 0.28157667307234796, Frame Count: 21
+Sleepy Driving Alert Detected at 2025-03-08 23:29:57
+EAR: 0.3488578628488459, Frame Count: 22
+Sleepy Driving Alert Detected at 2025-03-08 23:29:57
+EAR: 0.12718036079471667, Frame Count: 23

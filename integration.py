@@ -3,6 +3,11 @@ import dlib
 import numpy as np
 import os
 import time
+import pygame
+
+
+pygame.mixer.init()
+alert_sound = pygame.mixer.Sound('signal.wav')  # Replace with your sound file
 
 face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
 detector = dlib.get_frontal_face_detector()
@@ -11,7 +16,7 @@ predictor = dlib.shape_predictor('shape_predictor_68_face_landmarks.dat')
 cap = cv2.VideoCapture(0)
 
 EAR_THRESHOLD = 0.2
-FRAME_THRESHOLD = 48
+FRAME_THRESHOLD = 10
 
 frame_count = 0
 sleep_alert = False
@@ -23,6 +28,7 @@ def calculate_ear(eye):
     ear = (A + B) / (2.0 * C)  
     return ear
 
+# File for logging results
 results = 'results'
 if not os.path.exists(results):
     os.makedirs(results)
@@ -61,16 +67,27 @@ while True:
 
             ear = (left_ear + right_ear) / 2.0
 
+            print(f"EAR: {ear}, Frame Count: {frame_count}")
             if ear < EAR_THRESHOLD:
                 frame_count += 1
+                print(f"EAR: {ear}, Frame Count: {frame_count}")  
             else:
-                frame_count = 0  
+                if frame_count > 0:
+                    frame_count = 0  
+                    print(f"EAR: {ear}, Frame Count subtracted by 1")
 
+            print(f"Frame Count: {frame_count}")  # Debugging frame count
             if frame_count >= FRAME_THRESHOLD:
+                print("Eyes are closed for a long period!")
                 sleep_alert = True
                 cv2.putText(frame, "ALERT: Sleepy Driving Detected!", (50, 50), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 255), 2, cv2.LINE_AA)
                 with open(file_path, 'a') as f:
                     f.write(f"Sleepy Driving Alert Detected at {time.strftime('%Y-%m-%d %H:%M:%S')}\n")
+                
+                # Check if the sound is not already playing
+                if not pygame.mixer.get_busy():
+                    print("Playing alert sound.")  # Debugging sound play trigger
+                    alert_sound.play()
 
     cv2.imshow('Driver Sleepiness Detection', frame)
 
